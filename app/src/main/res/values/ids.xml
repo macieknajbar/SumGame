@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="game_equation" type="id" />
+    <item name="game_result" type="id" />
+    <item name="game_check" type="id" />
+    <item name="anchor_1" type="id" />
+    <item name="anchor_2" type="id" />
+    <item name="anchor_3" type="id" />
+    <item name="anchor_4" type="id" />
+</resources>
