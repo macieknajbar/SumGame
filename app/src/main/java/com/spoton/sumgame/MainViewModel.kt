@@ -32,7 +32,7 @@ class MainViewModel(
         _viewState.value = ViewState.Display(
             equation = "$firstValue ${sign.sign} $secondValue = ",
             anchorId = anchorIds[random.nextInt(anchorIds.size)],
-            shouldShowSnackbar = points != 0,
+            shouldShowSnackbar = points > 0,
             snackbarText = "You've got $points points."
         )
     }
@@ -57,7 +57,7 @@ class MainViewModel(
             nextEquation()
         }
 
-        if (points == 0) {
+        if (points <= 0) {
             _viewState.value = ViewState.GameOver
         }
     }
